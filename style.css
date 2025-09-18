@@ -1,3 +1,42 @@
 * {
   color: purple;
+  /* always give multiple font-family, so if one fails other will take over. */
+  font-family: "Times New Roman", serif;
+}
+
+div{
+    color: red;
+    font-weight: 700;
+}
+
+.Alert-text{
+    color: blue;
+    text-align: center;
+}
+
+#title{
+    color:aqua  
+}
+
+/* Both our .read and .unread selectors share the style but have their own unique declarations. To cut down on the repetition, we can group these two selectors together as a comma-separated list. */
+.read , 
+.unread{
+    color: aquamarine;
+    background-color: black;
+    font-size: 20px;
+    border: 10px solid currentColor;
+}
+
+/* jis class me dono .subsection and .header ho usme hi ye style apply hoga */
+.subsection.header {
+  color: red;
+}
+
+.ancestor .contents{
+  background-color: black;
+}
+
+.odinImage{
+  height: auto;
+  width: 150px;
 }
